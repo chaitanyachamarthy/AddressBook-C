@@ -2,6 +2,8 @@
 
 A console-based contact management application developed in **C**. The project supports creating, searching, editing, deleting, and listing contacts, with data saved to a CSV file so contacts can be loaded again when the application restarts.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/chaitanyachamarthy/AddressBook-C?quickstart=1)
+
 ## Features
 
 - **Create contacts** with a name, phone number, and email address.
