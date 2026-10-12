@@ -37,17 +37,17 @@ void listContacts(AddressBook *addressBook)
         }
     }
     // Printing Contacts in Tabular form.
-    printf("                          Contacts List                               \n");
-    printf("+-----+--------------------+---------------+-------------------------+\n");
-    printf("|S.no |NAME                |PHONE          |EMAIL                    |\n");
-    printf("+-----+--------------------+---------------+-------------------------+\n");
+    printf("                           Contacts List                                \n");
+    printf("+-----+--------------------+---------------+---------------------------+\n");
+    printf("|S.no |NAME                |PHONE          |EMAIL                      |\n");
+    printf("+-----+--------------------+---------------+---------------------------+\n");
     for (int i = 0; i < addressBook->contactCount; i++)
     {
-        printf("|%-5d|%-20s|%-15s|%-25s|\n", i, addressBook->contacts[i].name,
+        printf("|%-5d|%-20s|%-15s|%-27s|\n", i, addressBook->contacts[i].name,
                addressBook->contacts[i].phone,
                addressBook->contacts[i].email);
     }
-    printf("+-----+--------------------+---------------+-------------------------+\n");
+    printf("+-----+--------------------+---------------+---------------------------+\n");
 }
 
 void initialize(AddressBook *addressBook)
@@ -515,7 +515,7 @@ int validEmail(char *email)
             printf("Domain part should only contain alpha/numeric/./- charcaters only\n");
             return 0;
         }
-        // if (email[at_index + 1] == '-' || ((email[i] == '-') && (email[i - 1] == '.' || email[i + 1] == '.')))
+        if (email[at_index + 1] == '-' || ((email[i] == '-') && (email[i - 1] == '.' || email[i + 1] == '.')))
         {
             printf("Domain part shouldn't start/end with '-'\n");
             return 0;

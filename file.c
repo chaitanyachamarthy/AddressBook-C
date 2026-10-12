@@ -44,5 +44,6 @@ void loadContactsFromFile(AddressBook *addressBook)
         
         i++;
     }
+    addressBook->contactCount = i;
     fclose(fp);    
 }
