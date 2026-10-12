@@ -1,0 +1,13 @@
+# Compiled executables
+*.exe
+*.out
+a.out
+addressbook
+
+# Object files
+*.o
+*.obj
+
+# Editor and temporary files
+.vscode/
+*.tmp
